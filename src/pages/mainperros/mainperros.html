@@ -1,0 +1,17 @@
+<!--
+  Página creada para mostrar las categorias
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Selecciona una categoria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item (click)="onclick()" *ngFor="let c of g_categorias" >
+    <ion-label>{{ c.nombre }}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>aaa</ion-label>
+  </ion-item>
+</ion-content>
